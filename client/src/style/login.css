@@ -1,0 +1,84 @@
+.login-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.login-wrapper .logo {
+  padding: 20px;
+  font-size: 24px;
+}
+.login-wrapper .logo span {
+  font-family: Rage;
+  font-size: 36px;
+}
+.button-wrapper {
+  display: flex;
+  flex-direction: row;
+}
+.button-wrapper a {
+  min-width: 200px;
+  min-height: 50px;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.button-wrapper h3 {
+  padding: 0px 20px;
+}
+.button-wrapper .create-account {
+  background-color: white;
+  border: 5px solid black;
+  font-weight: 600;
+  font-size: 20px;
+  cursor: pointer;
+  color: black;
+}
+.button-wrapper .login {
+  cursor: pointer;
+  background-color: dodgerblue;
+  border: 0px;
+  font-weight: 600;
+  color: white;
+  font-size: 20px;
+}
+.main-wrapper {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.register-form-wrapper {
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+  border: 5px solid black;
+}
+.register-form-wrapper form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+.register-form-wrapper form input {
+  margin-bottom: 10px;
+  width: 260px;
+  padding: 10px;
+  font-size: 18px;
+  border: none;
+  border-bottom: 3px solid black;
+}
+.register-form-wrapper form button {
+  background-color: dodgerblue;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  border: none;
+  width: 280px;
+  padding: 10px;
+}

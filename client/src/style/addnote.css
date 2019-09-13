@@ -1,0 +1,59 @@
+.add-notes {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.note-date {
+  padding: 10px;
+  font-size: 14px;
+}
+.note-body {
+  padding: 10px;
+}
+.note-body textarea {
+  background-color: white;
+  box-sizing: border-box;
+  border: none;
+  resize: none;
+  font-size: 16px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  width: 100%;
+  height: 100%;
+}
+.note-bottom-buttons {
+  width: 100%;
+  background-color: #eee;
+  min-height: 50px;
+  justify-self: flex-end;
+  float: right;
+  display: flex;
+  bottom: 0;
+  left: 0;
+  position: static;
+}
+.note-bottom-buttons button {
+  flex-grow: 2;
+}
+.note-bottom-buttons .save {
+  background-color: dodgerblue;
+  color: white;
+  font-size: 24px;
+  font-weight: 600;
+  border: none;
+  border-radius: 0px 0px 5px 0px;
+}
+.note-bottom-buttons .delete {
+  background-color: rgb(255, 73, 73);
+  color: white;
+  font-size: 24px;
+  font-weight: 600;
+  border: none;
+  border-radius: 0px 0px 0px 5px;
+}

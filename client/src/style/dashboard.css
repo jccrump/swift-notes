@@ -1,0 +1,104 @@
+.dashboard-wrapper {
+  max-width: 1300px;
+  background-color: white;
+  margin: auto;
+  padding: 0px 20px;
+  display: flex;
+  flex-direction: row;
+}
+.main-wrapper {
+  max-width: 100vw;
+  max-height: 80vh;
+  margin: 0px 10px;
+}
+.main-notes {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  background-color: rgb(245, 245, 245);
+}
+.notes-search-bar-wrapper {
+  height: 50px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  border-bottom: 1px solid rgb(206, 206, 206);
+}
+.notes-search-bar-wrapper input {
+  flex-grow: 2;
+  font-size: 24px;
+  border: none;
+  padding: 10px;
+  border-radius: 5px 0px 0px 0px;
+}
+.notes-search-bar-wrapper button,
+.notes-search-bar-wrapper a {
+  width: 60px;
+  height: 100%;
+  border: none;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  color: rgb(121, 121, 121);
+  border-left: 1px solid rgb(206, 206, 206);
+  cursor: pointer;
+}
+.notes-search-bar-wrapper a:last-child {
+  border-radius: 0px 5px 0px 0px;
+}
+.sidenotes-wrapper {
+  display: flex;
+  flex-direction: column;
+  max-width: 230px;
+  width: 100%;
+}
+.quicknotes-wrapper {
+  background-color: rgb(255, 249, 162);
+  max-height: 40vh;
+  height: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+.quicknotes-wrapper .title,
+.quicknote {
+  padding: 10px;
+}
+.quicknotes-wrapper .title {
+  border-bottom: 1px dashed saddlebrown;
+  min-height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.quicknotes-wrapper .quicknote textarea {
+  background-color: rgb(255, 249, 162);
+  box-sizing: border-box;
+  border: none;
+  resize: none;
+  width: 100%;
+  height: 100%;
+}
+.todo-wrapper {
+  background-color: white;
+  max-height: 40vh;
+  height: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 5px;
+}
+.todo-wrapper .title {
+  border-bottom: 1px solid rgb(194, 194, 194);
+  min-height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.todo-wrapper .title,
+.todo-list {
+  padding: 10px;
+}

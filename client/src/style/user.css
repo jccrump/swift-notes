@@ -1,0 +1,54 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+}
+.navbar-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px 0px;
+}
+.navbar-wrapper .logo span {
+  font-family: Rage;
+  font-size: 24px;
+}
+.navbar-wrapper .settings {
+  margin-right: 10px;
+}
+.notebooks-wrapper {
+  display: flex;
+  flex-direction: column;
+  max-width: 50px;
+}
+.notebooks-wrapper .notebook-link {
+  min-width: 50px;
+  min-height: 50px;
+  text-decoration: none;
+  background-color: lightsalmon;
+  color: white;
+  font-size: 24px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.add-notebook {
+  background-color: white;
+  border-radius: 50%;
+  border: none;
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: dodgerblue;
+  cursor: pointer;
+  min-width: 50px;
+  min-height: 50px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
