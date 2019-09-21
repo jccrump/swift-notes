@@ -49,6 +49,22 @@ router.post("/register", (req, res) => {
 });
 
 router.get("/notes", verifyToken, (req, res) => {
-  res.send(req.user.notebooks);
+  res.send(req.user);
+});
+router.post("/quicknote", verifyToken, (req, res) => {
+  console.log(req.body);
+  userModel.findOneAndUpdate(
+    { email: req.user.email },
+    { quicknote: req.body.quicknote },
+    (err, response) => {
+      if (err) console.log(err);
+      res.send("It worked");
+    }
+  );
+});
+router.get("/quicknote", verifyToken, (req, res) => {
+  userModel.findOne({ email: req.user.email }).then(doc => {
+    res.send(doc.quicknote);
+  });
 });
 module.exports = router;

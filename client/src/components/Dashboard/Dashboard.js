@@ -12,7 +12,8 @@ export default class Dashboard extends Component {
     super(props);
     this.state = {
       notebooks: [],
-      notes: []
+      notes: [],
+      quicknote: ""
     };
   }
   componentWillMount() {
@@ -21,16 +22,17 @@ export default class Dashboard extends Component {
         headers: { Authorization: localStorage.getItem("access-token") }
       })
       .then(response => {
+        console.log(response.data);
         this.setState({
-          notebooks: response.data,
-          notes: response.data[0].notes
+          notebooks: response.data.notebooks,
+          notes: response.data.notebooks[0].notes
         });
       })
       .catch(err => console.log(err));
   }
   handleNotebookChange = name => {
     let notes = this.state.notebooks.filter(notebook => {
-      if (notebook.name == name) {
+      if (notebook.name === name) {
         return true;
       } else {
         return false;
@@ -53,12 +55,7 @@ export default class Dashboard extends Component {
             path="/user"
             component={() => <MainNote notes={this.state.notes} />}
           />
-          <Route
-            path="/user/add"
-            component={() => (
-              <AddNote exit={"Cancel"} title={""} body={""} date={""} />
-            )}
-          />
+          <Route path="/user/note/:id" component={AddNote} />
         </Switch>
 
         <SideNote />

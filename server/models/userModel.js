@@ -10,6 +10,7 @@ let userSchema = mongoose.Schema(
       type: Boolean,
       default: true
     },
+    quicknote: String,
     notebooks: [
       {
         name: String,

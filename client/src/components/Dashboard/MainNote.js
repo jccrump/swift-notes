@@ -1,12 +1,20 @@
 import React, { Component } from "react";
 import { FaRegStickyNote, FaSearch } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import Note from "../../components/Dashboard/Note";
 
 export default class MainNote extends Component {
   componentWillMount() {}
   render() {
     let notes = this.props.notes.map(note => {
-      return <p>{note.body}</p>;
+      return (
+        <Note
+          index={this.props.notes.indexOf(note)}
+          title={note.title}
+          note={note.body}
+          date={note.date_created}
+        />
+      );
     });
     return (
       <div className="main-wrapper">
